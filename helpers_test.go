@@ -119,7 +119,7 @@ func TestPreventImageOverwriteImageExists(t *testing.T) {
 		t.Fatalf("Expected error")
 	}
 
-	if !strings.Contains(err.Error(), "Cannot overwrite an existing image.") {
+	if !strings.Contains(err.Error(), "Cannot overwrite an existing image") {
 		t.Fatal("Wrong error message")
 	}
 }
